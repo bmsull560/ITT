@@ -1,0 +1,61 @@
+
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.scroll-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #e94560;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: #0f3460;
+}
+
+/* Fade In Effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Glide In Effect */
+.glide-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: glideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes glideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
